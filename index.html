@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#0a192f">
+    <title>Happy New Year 2026 </title>
+    <meta name="description" content="A responsive New Year celebration website for developers, optimized for all devices">
+    <meta name="keywords" content="New Year 2026, Developer, Responsive Design, Celebration">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#countdown"><i class="fas fa-clock"></i> Countdown</a></li>
+            <li><a href="#resolutions"><i class="fas fa-code"></i> Dev Resolutions</a></li>
+            <li><a href="#reflections"><i class="fas fa-brain"></i> Reflections</a></li>
+            <li><button class="theme-toggle mobile-theme-toggle">
+                <i class="fas fa-moon"></i> Toggle Theme
+            </button></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="code-icon">{ }</span>
+                <h1>Dev<span class="year">2026</span></h1>
+            </div>
+            <nav class="nav desktop-nav">
+                <ul>
+                    <li><a href="#countdown"><i class="fas fa-clock"></i> Countdown</a></li>
+                    <li><a href="#resolutions"><i class="fas fa-code"></i> Dev Resolutions</a></li>
+                    <li><a href="#reflections"><i class="fas fa-brain"></i> Reflections</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle desktop-theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="new-year-title">
+                        <h2 class="typed-text">Happy New Year</h2>
+                        <div class="year-highlight">
+                            <span class="year-number">2026</span>
+                        </div>
+                        <p class="subtitle">Crafted with clean code & best practices</p>
+                        <div class="mobile-cta">
+                            <button class="cta-button mobile-celebrate" id="mobile-celebrate">
+                                <i class="fas fa-fireworks"></i> Celebrate Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="window-title">new-year-2026.js</span>
+                            </div>
+                            <div class="window-content">
+                                <pre><code>const newYear = {
+    year: 2026,
+    greeting: "Hello, future!",
+    resolution: "Write cleaner code",
+    techToLearn: ["WebAssembly", "Quantum Computing"],
+    celebrate: () => launchFireworks()
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </section>
+
+            <section id="countdown" class="countdown-section">
+                <h3><i class="fas fa-rocket"></i> Countdown to 2026</h3>
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="days">365</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="hours">24</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutes">60</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="seconds">60</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="year-progress"></div>
+                    <div class="progress-label" id="progress-text">0% of 2025 completed</div>
+                </div>
+                <p class="mobile-hint">Swipe left/right to see all countdown boxes on mobile</p>
+            </section>
+
+            <section id="resolutions" class="resolutions-section">
+                <h3><i class="fas fa-tasks"></i> Developer Resolutions for 2026</h3>
+                <div class="resolutions-grid">
+                    <div class="resolution-card">
+                        <div class="resolution-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Security First</h4>
+                        <p>Implement security best practices in every project. Focus on OWASP Top 10 and data protection.</p>
+                    </div>
+                    <div class="resolution-card">
+                        <div class="resolution-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sustainable Code</h4>
+                        <p>Write energy-efficient code and optimize for performance to reduce digital carbon footprint.</p>
+                    </div>
+                    <div class="resolution-card">
+                        <div class="resolution-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>AI Integration</h4>
+                        <p>Responsibly integrate AI tools into development workflow to enhance productivity.</p>
+                    </div>
+                    <div class="resolution-card">
+                        <div class="resolution-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h4>Mentorship</h4>
+                        <p>Mentor junior developers and contribute to open-source projects regularly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reflections" class="reflections-section">
+                <h3><i class="fas fa-brain"></i> 2025 Reflections & 2026 Forecast</h3>
+                <div class="reflections-content">
+                    <div class="reflection-box past">
+                        <h4><i class="fas fa-history"></i> 2025 Highlights</h4>
+                        <ul>
+                            <li>Web3 adoption became mainstream</li>
+                            <li>AI-assisted development matured</li>
+                            <li>Edge computing expanded significantly</li>
+                            <li>Accessibility became a core requirement</li>
+                        </ul>
+                    </div>
+                    <div class="reflection-box future">
+                        <h4><i class="fas fa-crystal-ball"></i> 2026 Predictions</h4>
+                        <ul>
+                            <li>Quantum computing APIs emerge</li>
+                            <li>AR-first web experiences grow</li>
+                            <li>Ethical AI frameworks standardize</li>
+                            <li>Low-code for high-complexity tasks</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-section">
+                <h3><i class="fas fa-gamepad"></i> New Year Interaction</h3>
+                <div class="interactive-content">
+                    <div class="interactive-box">
+                        <h4>Launch Fireworks</h4>
+                        <p>Click to celebrate with virtual fireworks!</p>
+                        <button id="fireworks-btn" class="cta-button">
+                            <i class="fas fa-fire"></i> Launch Fireworks
+                        </button>
+                    </div>
+                    <div class="interactive-box">
+                        <h4>Share Your Resolution</h4>
+                        <textarea id="resolution-input" placeholder="What's your developer resolution for 2026?"></textarea>
+                        <button id="share-resolution" class="cta-button">
+                            <i class="fas fa-paper-plane"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="mobile-optimizations">
+                <h3><i class="fas fa-mobile-alt"></i> Mobile Optimized</h3>
+                <div class="mobile-features">
+                    <div class="mobile-feature">
+                        <i class="fas fa-hand-pointer"></i>
+                        <h4>Touch-Friendly</h4>
+                        <p>All buttons and controls are sized for touch interaction</p>
+                    </div>
+                    <div class="mobile-feature">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Fast Loading</h4>
+                        <p>Optimized assets and minimal requests for mobile networks</p>
+                    </div>
+                    <div class="mobile-feature">
+                        <i class="fas fa-compress-alt"></i>
+                        <h4>Responsive Layout</h4>
+                        <p>Adapts to any screen size from 320px to 4K displays</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="code-icon">{ }</span>
+                    <h3>Happy New Year 2026</h3>
+                    <p>Built with modern responsive web technologies</p>
+                </div>
+                <div class="footer-tech">
+                    <h4>Tech Stack</h4>
+                    <div class="tech-icons">
+                        <span class="tech-icon"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-icon"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-icon"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+                        <a href="#" aria-label="Dev.to"><i class="fab fa-dev"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2026</span> | Crafted by a Senior Developer | Fully Responsive Design 🎉</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Canvas for animations -->
+    <canvas id="fireworks-canvas"></canvas>
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- JavaScript files -->
+    <script src="confetti.js"></script>
+    <script src="fireworks.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
